@@ -61,9 +61,9 @@
           <div id="header-top" class="header">
             <div class="search-container">
               <span class="iconify black-icons" data-icon="mdi-magnify"></span>
-              <input id="search-bar" type="text" placeholder="Search..." />
+              <input id="search-bar" type="text" />
             </div>
-            <div>
+            <div id="user-info-container">
               <span
                 class="iconify black-icons"
                 data-icon="mdi-bell-ring-outline"
@@ -72,22 +72,27 @@
                 src="./images/a4dd70d5990704f6e24574cb766a5742.jpg"
                 alt="User Avatar"
               />
-              <span>Morgan Freeman</span>
+              <span class="user-name">Morgan Freeman</span>
             </div>
           </div>
-          <div class="header">
-            <img
-              src="./images/a4dd70d5990704f6e24574cb766a5742.jpg"
-              alt="User Avatar"
-            />
-            <div>
-              <span>Hi there,</span>
-              <span>Morgan Freeman (@morgan)</span>
+          <div class="header" id="header-bottom">
+            <div id="welcome-container">
+              <img
+                id="bigger-img"
+                src="./images/a4dd70d5990704f6e24574cb766a5742.jpg"
+                alt="User Avatar"
+              />
+              <span id="greetings-message"
+                >Hi there, <br />
+                <span id="greeting-user-name"
+                  >Morgan Freeman (@morgan)</span
+                ></span
+              >
             </div>
-            <div>
-              <button>New</button>
-              <button>Upload</button>
-              <button>Share</button>
+            <div id="buttons-container">
+              <button class="button">New</button>
+              <button class="button">Upload</button>
+              <button class="button">Share</button>
             </div>
           </div>
         </header>
