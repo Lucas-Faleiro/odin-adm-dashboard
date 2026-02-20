@@ -9,59 +9,73 @@
     <title>Odin Admin Dashboard</title>
   </head>
   <body>
-    <div>
-      <aside>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <title>view-dashboard</title>
-          <path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" />
-        </svg>
-        <nav>
-          <ul>
-            <li><span class="iconify" data-icon="mdi-home"></span>Home</li>
-            <li>
+    <div id="app-container">
+      <aside id="aside-container">
+        <div id="aside-title-container">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <title>view-dashboard</title>
+            <path
+              d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z"
+            />
+          </svg>
+          <h2>Dashboard</h2>
+        </div>
+        <nav id="aside-nav-container">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <span class="iconify" data-icon="mdi-home"></span>Home
+            </li>
+            <li class="nav-item">
               <span class="iconify" data-icon="mdi-account"></span>Profile
             </li>
-            <li>
+            <li class="nav-item">
               <span class="iconify" data-icon="mdi-message"></span>Messages
             </li>
-            <li>
+            <li class="nav-item">
               <span class="iconify" data-icon="mdi-clock-time-three"></span
               >History
             </li>
-            <li>
+            <li class="nav-item">
               <span class="iconify" data-icon="mdi-file-multiple"></span>Tasks
             </li>
-            <li>
+            <li class="nav-item">
               <span class="iconify" data-icon="mdi-account-group"></span
               >Communities
             </li>
           </ul>
-          <ul>
-            <li><span class="iconify" data-icon="mdi-cog"></span>Settings</li>
-            <li>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <span class="iconify" data-icon="mdi-cog"></span>Settings
+            </li>
+            <li class="nav-item">
               <span class="iconify" data-icon="mdi-help-box"></span>Support
             </li>
-            <li>
+            <li class="nav-item">
               <span class="iconify" data-icon="mdi-shield-check"></span>Privacy
             </li>
           </ul>
         </nav>
       </aside>
       <div>
-        <header>
-          <div>
-            <span class="iconify" data-icon="mdi-magnify"></span>
-            <input type="text" placeholder="Search..." />
+        <header id="header-container">
+          <div id="header-top" class="header">
+            <div class="search-container">
+              <span class="iconify black-icons" data-icon="mdi-magnify"></span>
+              <input id="search-bar" type="text" placeholder="Search..." />
+            </div>
+            <div>
+              <span
+                class="iconify black-icons"
+                data-icon="mdi-bell-ring-outline"
+              ></span>
+              <img
+                src="./images/a4dd70d5990704f6e24574cb766a5742.jpg"
+                alt="User Avatar"
+              />
+              <span>Morgan Freeman</span>
+            </div>
           </div>
-          <div>
-            <span class="iconify" data-icon="mdi-bell-ring-outline"></span>
-            <img
-              src="./images/a4dd70d5990704f6e24574cb766a5742.jpg"
-              alt="User Avatar"
-            />
-            <span>Morgan Freeman</span>
-          </div>
-          <div>
+          <div class="header">
             <img
               src="./images/a4dd70d5990704f6e24574cb766a5742.jpg"
               alt="User Avatar"
