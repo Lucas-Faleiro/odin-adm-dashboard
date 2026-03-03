@@ -12,7 +12,7 @@ body {
 
 #app-container {
   display: grid;
-  grid-template-columns: 2fr 9fr;
+  grid-template-columns: 300px 9fr;
   height: 100%;
 }
 
@@ -66,8 +66,13 @@ svg {
 
 img {
   border-radius: 50%;
-  width: 54px;
+  width: 40px;
   cursor: pointer;
+}
+
+#not-perfect-square-img {
+  object-fit: cover;
+  aspect-ratio: 1/1;
 }
 
 #aside-container {
@@ -79,11 +84,20 @@ li {
   list-style-type: none;
 }
 
+#header-main-container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100dvh;
+}
+
 #header-container {
   display: flex;
   flex-direction: column;
   padding: 20px;
   gap: 20px;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0px 4px 2px 0px #d9d9d9;
 }
 
 .header {
@@ -160,4 +174,107 @@ li {
   width: 110px;
   padding: 8px;
   cursor: pointer;
+}
+
+#main-container {
+  background-color: #e2e8f0;
+  display: grid;
+  grid-template-areas: "projects projects aside" "projects projects aside";
+}
+
+#projects-section {
+  grid-area: projects;
+  padding: 20px;
+}
+
+#projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 200px 200px;
+  padding: 20px;
+  gap: 20px;
+}
+
+.main-titles {
+  font-size: 22px;
+}
+
+#your-projects {
+  padding-left: 20px;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 10px;
+  border-left: 8px solid #f0b429;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  width: 350px;
+  justify-self: center;
+}
+
+.group-icons-card {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.smaller-size-icon {
+  font-size: 24px;
+}
+
+#main-aside-container {
+}
+
+.main-aside {
+  padding: 20px;
+  width: 300px;
+}
+
+#announcements-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  display: grid;
+  gap: 20px;
+}
+
+.announcement-item {
+  font-size: 12px;
+}
+
+#announcements {
+  grid-area: aside;
+}
+
+#trending {
+  grid-area: aside;
+}
+
+#trending-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 10px;
+  display: grid;
+  gap: 20px;
+}
+
+.trending-item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.trending-user-info {
+  display: grid;
+  gap: 6px;
+}
+
+.trending-user-tag {
+  font-weight: bold;
 }
